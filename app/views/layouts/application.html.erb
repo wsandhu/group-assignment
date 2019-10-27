@@ -10,6 +10,13 @@
   </head>
 
   <body>
-    <%= yield %>
-  </body>
+      <div class="heading">
+    <h1>Appointment Manager</h1>
+    <%= link_to("Owners", owners_path) %>
+    <%= link_to("Animals", animals_path) %>
+    <%= link_to("Date of infection", date_of_infections_path) %>
+    <%= link_to("Diseases", diseases_path) %>
+      </div>
+<%= yield %>
+</body>
 </html>
