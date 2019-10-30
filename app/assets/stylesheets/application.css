@@ -13,9 +13,110 @@
  *= require_tree .
  *= require_self
  */
- .header {
-    background-color: purple; 
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 2%;
- }
+
+body {
+   background-color: #90A4AE;
+}
+
+table {
+   border-collapse: collapse;
+   background-color: #EEEEEE;
+   border: 1px solid #212121;
+   margin-bottom: 10px;
+}
+table td,th {
+   text-align: left;
+   padding: 8px;
+}
+table th {
+   font-weight: bold;
+   text-transform: uppercase;
+   background-color: #EEEEEE;
+   text-decoration: underline;
+   border: none;
+}
+table tr td {
+   background-color: lightblue;
+   border:none;
+}
+
+form {
+   border: 1px solid #212121;
+   box-shadow: 0px 1px 3px 1px #37474F;
+   margin-bottom: 20px;
+   border-radius: 2px;
+   padding: 10px;
+   min-width:25%;
+   width: 250px;
+}
+
+form label {
+   color: whitesmoke;
+   text-transform: uppercase;
+}
+
+input, button, a {
+   border-top: 1px solid #CCCCCC;
+   border-right: 1px solid #333333;
+   border-bottom: 1px solid #333333;
+   border-left: 1px solid #CCCCCC;
+   text-decoration: none;
+   font: bold 11px Arial;
+   background-color: #EEEEEE;
+   color: #333333;
+   padding: 4px 6px 4px 6px;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color: #03A9F4; 
+    border-radius: 0px 2px 0px 2px;
+    position: fixed;
+    padding: 12px;
+    box-shadow: 0px 3px 5px 3px #37474F;
+}
+
+.header h1,h2,h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #212121;
+    font-size: 45px;
+}
+
+.header a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content {
+   margin-top: 145px;
+}
+
+.content h1 {
+   color: whitesmoke;
+   text-transform: uppercase;
+   text-shadow: 1px 1px 1px #212121;
+}
+
+.content p {
+   color: whitesmoke;
+   text-shadow: 1px 1px 1px #212121;
+   font-size: 24px;
+   padding: 3px;
+}
+
+.content p strong {
+   text-transform: uppercase;
+}
+
+#notice {
+   color: #e91e63;
+   text-shadow: -1px -1px 0px whitesmoke, 1px 1px 1px black;
+   margin-top: 10px;
+   font-size: 24px;
+   text-transform: uppercase;
+   font-weight: 800;
+}
