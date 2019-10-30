@@ -307,6 +307,8 @@ Processing by OwnersController#index as HTML
 Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.4ms | Allocations: 11414)
 
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2019-10-30 03:22:32 -0500
   [1m[35m (3.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -328,6 +330,13 @@ Completed 200 OK in 1572ms (Views: 1549.1ms | ActiveRecord: 2.5ms | Allocations:
 Started GET "/dieases" for 127.0.0.1 at 2019-10-30 03:23:07 -0500
   
 ActionController::RoutingError (No route matches [GET] "/dieases"):
+=======
+Started GET "/physicians" for ::1 at 2019-10-27 13:10:11 -0500
+  [1m[35m (17.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/physicians"):
+>>>>>>> origin/wajeeh
   
 actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
 web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
@@ -359,6 +368,7 @@ puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/diseases" for 127.0.0.1 at 2019-10-30 03:23:21 -0500
 Processing by DiseasesController#index as HTML
   Rendering diseases/index.html.erb within layouts/application
@@ -486,6 +496,27 @@ Completed 200 OK in 47ms (Views: 44.2ms | ActiveRecord: 0.3ms | Allocations: 875
 Started GET "/owner" for 127.0.0.1 at 2019-10-30 03:25:21 -0500
   
 ActionController::RoutingError (No route matches [GET] "/owner"):
+=======
+Started GET "/" for ::1 at 2019-10-29 22:37:04 -0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/syedyousha/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/syedyousha/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.6ms | Allocations: 485)
+Completed 200 OK in 21ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 2835)
+
+
+Started GET "/" for ::1 at 2019-10-29 22:37:13 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/syedyousha/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/syedyousha/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.6ms | Allocations: 235)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 1069)
+
+
+Started GET "/appointments" for ::1 at 2019-10-29 22:37:14 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/appointments"):
+>>>>>>> origin/Syed
   
 actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
 web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
@@ -517,6 +548,7 @@ puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/owners" for 127.0.0.1 at 2019-10-30 03:25:24 -0500
 Processing by OwnersController#index as HTML
   Rendering owners/index.html.erb within layouts/application
@@ -888,5 +920,849 @@ Processing by AnimalsController#index as HTML
   ↳ app/views/animals/index.html.erb:16
   Rendered animals/index.html.erb within layouts/application (Duration: 19.9ms | Allocations: 641)
 Completed 200 OK in 137ms (Views: 123.0ms | ActiveRecord: 4.7ms | Allocations: 8906)
+=======
+Started GET "/animals" for ::1 at 2019-10-27 13:10:21 -0500
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:16
+  Rendered animals/index.html.erb within layouts/application (Duration: 54.4ms | Allocations: 6682)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in C:/group-assignment/public/packs
+Completed 200 OK in 30007ms (Views: 29931.1ms | ActiveRecord: 1.4ms | Allocations: 2141857)
+
+
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/animals" for ::1 at 2019-10-27 13:15:29 -0500
+  [1m[35m (31.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (1.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:16
+  Rendered animals/index.html.erb within layouts/application (Duration: 82.2ms | Allocations: 10440)
+Completed 200 OK in 15834ms (Views: 15659.1ms | ActiveRecord: 3.0ms | Allocations: 1811119)
+
+
+Started GET "/animals" for ::1 at 2019-10-27 13:16:40 -0500
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:16
+  Rendered animals/index.html.erb within layouts/application (Duration: 71.2ms | Allocations: 1002)
+Completed 200 OK in 299ms (Views: 295.1ms | ActiveRecord: 0.6ms | Allocations: 15001)
+
+
+Started GET "/owners" for ::1 at 2019-10-27 13:16:42 -0500
+Processing by OwnersController#index as HTML
+  Rendering owners/index.html.erb within layouts/application
+  [1m[36mOwner Load (1.6ms)[0m  [1m[34mSELECT "owners".* FROM "owners"[0m
+  ↳ app/views/owners/index.html.erb:15
+  Rendered owners/index.html.erb within layouts/application (Duration: 59.6ms | Allocations: 8943)
+Completed 200 OK in 226ms (Views: 200.9ms | ActiveRecord: 2.4ms | Allocations: 35232)
+
+
+Started GET "/animals" for ::1 at 2019-10-27 13:16:44 -0500
+=======
+Started GET "/animals" for ::1 at 2019-10-29 22:37:14 -0500
+>>>>>>> origin/Syed
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:16
+<<<<<<< HEAD
+  Rendered animals/index.html.erb within layouts/application (Duration: 43.3ms | Allocations: 636)
+Completed 200 OK in 226ms (Views: 215.1ms | ActiveRecord: 0.6ms | Allocations: 13236)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:16:44 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.7ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 70.9ms | Allocations: 9342)
+Completed 200 OK in 228ms (Views: 191.7ms | ActiveRecord: 1.8ms | Allocations: 24866)
+
+
+Started GET "/diseases" for ::1 at 2019-10-27 13:16:45 -0500
+Processing by DiseasesController#index as HTML
+  Rendering diseases/index.html.erb within layouts/application
+  [1m[36mDisease Load (0.8ms)[0m  [1m[34mSELECT "diseases".* FROM "diseases"[0m
+  ↳ app/views/diseases/index.html.erb:15
+  Rendered diseases/index.html.erb within layouts/application (Duration: 100.3ms | Allocations: 5477)
+Completed 200 OK in 300ms (Views: 253.5ms | ActiveRecord: 1.8ms | Allocations: 24905)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:16:53 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.5ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 635)
+Completed 200 OK in 149ms (Views: 146.8ms | ActiveRecord: 0.5ms | Allocations: 13236)
+
+
+Started GET "/date_of_infections/new" for ::1 at 2019-10-27 13:16:59 -0500
+Processing by DateOfInfectionsController#new as HTML
+  Rendering date_of_infections/new.html.erb within layouts/application
+  Rendered date_of_infections/_form.html.erb (Duration: 238.1ms | Allocations: 18491)
+  Rendered date_of_infections/new.html.erb within layouts/application (Duration: 273.1ms | Allocations: 18868)
+Completed 200 OK in 416ms (Views: 394.3ms | ActiveRecord: 4.4ms | Allocations: 41132)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:17:03 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.4ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 631)
+Completed 200 OK in 98ms (Views: 91.7ms | ActiveRecord: 0.4ms | Allocations: 13226)
+
+
+Started GET "/animals" for ::1 at 2019-10-27 13:17:15 -0500
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:16
+  Rendered animals/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 905)
+Completed 200 OK in 129ms (Views: 125.9ms | ActiveRecord: 0.3ms | Allocations: 24101)
+
+
+Started GET "/owners" for ::1 at 2019-10-27 13:17:17 -0500
+Processing by OwnersController#index as HTML
+  Rendering owners/index.html.erb within layouts/application
+  [1m[36mOwner Load (0.6ms)[0m  [1m[34mSELECT "owners".* FROM "owners"[0m
+  ↳ app/views/owners/index.html.erb:15
+  Rendered owners/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1190)
+Completed 200 OK in 178ms (Views: 173.9ms | ActiveRecord: 0.6ms | Allocations: 23454)
+
+
+Started GET "/animals" for ::1 at 2019-10-27 13:17:19 -0500
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:16
+  Rendered animals/index.html.erb within layouts/application (Duration: 38.3ms | Allocations: 917)
+Completed 200 OK in 161ms (Views: 158.8ms | ActiveRecord: 0.4ms | Allocations: 15741)
+
+
+Started GET "/animals/new" for ::1 at 2019-10-27 13:17:56 -0500
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/_form.html.erb (Duration: 53.5ms | Allocations: 8456)
+  Rendered animals/new.html.erb within layouts/application (Duration: 78.2ms | Allocations: 8857)
+Completed 200 OK in 222ms (Views: 184.6ms | ActiveRecord: 1.4ms | Allocations: 30844)
+
+
+Started GET "/animals/new" for ::1 at 2019-10-27 13:18:54 -0500
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mOwner Load (0.5ms)[0m  [1m[34mSELECT "owners".* FROM "owners"[0m
+  ↳ app/views/animals/_form.html.erb:26
+  Rendered animals/_form.html.erb (Duration: 140.5ms | Allocations: 8325)
+  Rendered animals/new.html.erb within layouts/application (Duration: 151.3ms | Allocations: 8729)
+Completed 200 OK in 368ms (Views: 357.1ms | ActiveRecord: 0.5ms | Allocations: 28594)
+
+
+Started GET "/owners" for ::1 at 2019-10-27 13:18:57 -0500
+Processing by OwnersController#index as HTML
+  Rendering owners/index.html.erb within layouts/application
+  [1m[36mOwner Load (0.7ms)[0m  [1m[34mSELECT "owners".* FROM "owners"[0m
+  ↳ app/views/owners/index.html.erb:15
+  Rendered owners/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1399)
+Completed 200 OK in 214ms (Views: 207.5ms | ActiveRecord: 0.7ms | Allocations: 16149)
+
+
+Started GET "/owners/new" for ::1 at 2019-10-27 13:18:59 -0500
+Processing by OwnersController#new as HTML
+  Rendering owners/new.html.erb within layouts/application
+  Rendered owners/_form.html.erb (Duration: 48.3ms | Allocations: 1262)
+  Rendered owners/new.html.erb within layouts/application (Duration: 124.9ms | Allocations: 1623)
+Completed 200 OK in 230ms (Views: 216.1ms | ActiveRecord: 1.7ms | Allocations: 17936)
+
+
+Started POST "/owners" for ::1 at 2019-10-27 13:19:06 -0500
+Processing by OwnersController#create as HTML
+  Parameters: {"authenticity_token"=>"bAXSIqdmkQGQgTmb2XJjGLTvFF/mCn9RfSPby91jmAwMeh5792/NsYDoLqU7oGX4HThRpPsjy3Vah6gnGjGVHA==", "owner"=>{"first_name"=>"Wajeeh", "last_name"=>"Sandhu"}, "commit"=>"Create Owner"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/owners_controller.rb:30:in `block in create'
+  [1m[36mOwner Create (25.4ms)[0m  [1m[32mINSERT INTO "owners" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Wajeeh"], ["last_name", "Sandhu"], ["created_at", "2019-10-27 18:19:06.536331"], ["updated_at", "2019-10-27 18:19:06.536331"]]
+  ↳ app/controllers/owners_controller.rb:30:in `block in create'
+  [1m[35m (35.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/owners_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/owners/1
+Completed 302 Found in 544ms (ActiveRecord: 60.6ms | Allocations: 9902)
+
+
+Started GET "/owners/1" for ::1 at 2019-10-27 13:19:07 -0500
+Processing by OwnersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOwner Load (0.5ms)[0m  [1m[34mSELECT "owners".* FROM "owners" WHERE "owners"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/owners_controller.rb:67:in `set_owner'
+  Rendering owners/show.html.erb within layouts/application
+  Rendered owners/show.html.erb within layouts/application (Duration: 26.7ms | Allocations: 294)
+Completed 200 OK in 250ms (Views: 186.5ms | ActiveRecord: 0.5ms | Allocations: 24869)
+
+
+Started GET "/animals" for ::1 at 2019-10-27 13:19:08 -0500
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (1.7ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:16
+  Rendered animals/index.html.erb within layouts/application (Duration: 121.3ms | Allocations: 917)
+Completed 200 OK in 375ms (Views: 362.0ms | ActiveRecord: 1.7ms | Allocations: 19879)
+
+
+Started GET "/animals/new" for ::1 at 2019-10-27 13:19:10 -0500
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mOwner Load (0.8ms)[0m  [1m[34mSELECT "owners".* FROM "owners"[0m
+  ↳ app/views/animals/_form.html.erb:26
+  Rendered animals/_form.html.erb (Duration: 139.9ms | Allocations: 7681)
+  Rendered animals/new.html.erb within layouts/application (Duration: 144.9ms | Allocations: 7795)
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 0.8ms | Allocations: 8629)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Owner:0x000000000e63a980>):
+    23: 
+    24:   <div class="field">
+    25:     <%= form.label :owner_id %>
+    26:     <%= form.collection_select :owner_id, Owner.all,:info, :name%>
+    27:   </div>
+    28: 
+    29:   <div class="actions">
+  
+app/views/animals/_form.html.erb:26
+app/views/animals/_form.html.erb:1
+app/views/animals/new.html.erb:3
+Started GET "/animals/new" for ::1 at 2019-10-27 13:19:41 -0500
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mOwner Load (0.6ms)[0m  [1m[34mSELECT "owners".* FROM "owners"[0m
+  ↳ app/views/animals/_form.html.erb:26
+  Rendered animals/_form.html.erb (Duration: 108.6ms | Allocations: 5500)
+  Rendered animals/new.html.erb within layouts/application (Duration: 151.5ms | Allocations: 5850)
+Completed 500 Internal Server Error in 230ms (ActiveRecord: 0.6ms | Allocations: 7214)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Owner:0x000000000ecd1b68>):
+    23: 
+    24:   <div class="field">
+    25:     <%= form.label :owner_id %>
+    26:     <%= form.collection_select :owner_id, Owner.all,:id, :name%>
+    27:   </div>
+    28: 
+    29:   <div class="actions">
+  
+app/views/animals/_form.html.erb:26
+app/views/animals/_form.html.erb:1
+app/views/animals/new.html.erb:3
+Started GET "/animals/new" for ::1 at 2019-10-27 13:21:42 -0500
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mOwner Load (0.4ms)[0m  [1m[34mSELECT "owners".* FROM "owners"[0m
+  ↳ app/views/animals/_form.html.erb:26
+  Rendered animals/_form.html.erb (Duration: 74.7ms | Allocations: 10686)
+  Rendered animals/new.html.erb within layouts/application (Duration: 79.4ms | Allocations: 11356)
+Completed 200 OK in 288ms (Views: 272.8ms | ActiveRecord: 0.4ms | Allocations: 27756)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:22:01 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.3ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 904)
+Completed 200 OK in 206ms (Views: 199.8ms | ActiveRecord: 0.3ms | Allocations: 14396)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:22:36 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (1.4ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 88.7ms | Allocations: 1911)
+Completed 200 OK in 276ms (Views: 268.8ms | ActiveRecord: 1.4ms | Allocations: 28224)
+
+
+Started GET "/date_of_infections/new" for ::1 at 2019-10-27 13:22:37 -0500
+Processing by DateOfInfectionsController#new as HTML
+  Rendering date_of_infections/new.html.erb within layouts/application
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/date_of_infections/_form.html.erb:21
+  Rendered date_of_infections/_form.html.erb (Duration: 124.3ms | Allocations: 2711)
+  Rendered date_of_infections/new.html.erb within layouts/application (Duration: 141.8ms | Allocations: 3074)
+Completed 200 OK in 264ms (Views: 248.2ms | ActiveRecord: 0.3ms | Allocations: 15815)
+
+
+Started GET "/animals" for ::1 at 2019-10-27 13:22:40 -0500
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (1.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:16
+  Rendered animals/index.html.erb within layouts/application (Duration: 36.5ms | Allocations: 913)
+Completed 200 OK in 221ms (Views: 216.0ms | ActiveRecord: 1.4ms | Allocations: 14093)
+
+
+Started GET "/animals/new" for ::1 at 2019-10-27 13:22:41 -0500
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mOwner Load (0.7ms)[0m  [1m[34mSELECT "owners".* FROM "owners"[0m
+  ↳ app/views/animals/_form.html.erb:26
+  Rendered animals/_form.html.erb (Duration: 46.4ms | Allocations: 2038)
+  Rendered animals/new.html.erb within layouts/application (Duration: 50.5ms | Allocations: 2399)
+Completed 200 OK in 170ms (Views: 164.2ms | ActiveRecord: 0.7ms | Allocations: 15141)
+
+
+Started POST "/animals" for ::1 at 2019-10-27 13:22:47 -0500
+Processing by AnimalsController#create as HTML
+  Parameters: {"authenticity_token"=>"4jhJ1qXSZiCxOvB0vZNKkzLn42My1+3+I2OI0oS493oPDdCQPWfJXp7gF2rsvOgKjk5f0H2GRaL2V68+Nvcrlg==", "animal"=>{"species"=>"Dog", "name"=>"XX", "owner_id"=>"1"}, "commit"=>"Create Animal"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/animals_controller.rb:30:in `block in create'
+  [1m[36mOwner Load (0.3ms)[0m  [1m[34mSELECT "owners".* FROM "owners" WHERE "owners"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:30:in `block in create'
+  [1m[36mAnimal Create (3.5ms)[0m  [1m[32mINSERT INTO "animals" ("species", "name", "owner_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["species", "Dog"], ["name", "XX"], ["owner_id", 1], ["created_at", "2019-10-27 18:22:47.375057"], ["updated_at", "2019-10-27 18:22:47.375057"]]
+  ↳ app/controllers/animals_controller.rb:30:in `block in create'
+  [1m[35m (78.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/animals_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/animals/1
+Completed 302 Found in 630ms (ActiveRecord: 83.1ms | Allocations: 17614)
+
+
+Started GET "/animals/1" for ::1 at 2019-10-27 13:22:48 -0500
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (3.0ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:67:in `set_animal'
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (Duration: 39.5ms | Allocations: 5729)
+Completed 200 OK in 377ms (Views: 246.9ms | ActiveRecord: 3.0ms | Allocations: 28004)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:22:50 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.3ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 635)
+Completed 200 OK in 108ms (Views: 104.5ms | ActiveRecord: 0.3ms | Allocations: 13237)
+
+
+Started GET "/date_of_infections/new" for ::1 at 2019-10-27 13:22:52 -0500
+Processing by DateOfInfectionsController#new as HTML
+  Rendering date_of_infections/new.html.erb within layouts/application
+  [1m[36mAnimal Load (1.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/date_of_infections/_form.html.erb:21
+  Rendered date_of_infections/_form.html.erb (Duration: 125.3ms | Allocations: 3746)
+  Rendered date_of_infections/new.html.erb within layouts/application (Duration: 167.0ms | Allocations: 4563)
+Completed 200 OK in 490ms (Views: 484.8ms | ActiveRecord: 1.3ms | Allocations: 37068)
+
+
+Started GET "/animals" for ::1 at 2019-10-27 13:22:55 -0500
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:16
+  Rendered animals/index.html.erb within layouts/application (Duration: 60.4ms | Allocations: 1354)
+Completed 200 OK in 169ms (Views: 166.7ms | ActiveRecord: 0.3ms | Allocations: 23648)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:23:53 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.4ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 2462)
+Completed 200 OK in 265ms (Views: 259.4ms | ActiveRecord: 0.4ms | Allocations: 33756)
+
+
+Started GET "/date_of_infections/new" for ::1 at 2019-10-27 13:23:54 -0500
+Processing by DateOfInfectionsController#new as HTML
+  Rendering date_of_infections/new.html.erb within layouts/application
+  [1m[36mAnimal Load (0.7ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/date_of_infections/_form.html.erb:21
+  Rendered date_of_infections/_form.html.erb (Duration: 107.3ms | Allocations: 3323)
+  Rendered date_of_infections/new.html.erb within layouts/application (Duration: 130.9ms | Allocations: 4618)
+Completed 200 OK in 271ms (Views: 264.1ms | ActiveRecord: 0.7ms | Allocations: 25478)
+
+
+Started POST "/date_of_infections" for ::1 at 2019-10-27 13:23:56 -0500
+Processing by DateOfInfectionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Z0TftCJCXlbQpgpLPTvnSVorDnm3tHDhQbXJsBSyZF1hwFeT5By/FggbnuiDqNg0UaHVpqiYrOOdBmsMRGngpA==", "date_of_infection"=>{"date(1i)"=>"2019", "date(2i)"=>"10", "date(3i)"=>"27", "animal_id"=>"1"}, "commit"=>"Create Date of infection"}
+  [1m[35m (1.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/date_of_infections_controller.rb:30:in `block in create'
+  [1m[36mAnimal Load (1.2ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/date_of_infections_controller.rb:30:in `block in create'
+  [1m[36mDateOfInfection Create (2.9ms)[0m  [1m[32mINSERT INTO "date_of_infections" ("date", "animal_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["date", "2019-10-27"], ["animal_id", 1], ["created_at", "2019-10-27 18:23:56.641855"], ["updated_at", "2019-10-27 18:23:56.641855"]]
+  ↳ app/controllers/date_of_infections_controller.rb:30:in `block in create'
+  [1m[35m (53.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/date_of_infections_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/date_of_infections/1
+Completed 302 Found in 512ms (ActiveRecord: 59.0ms | Allocations: 9248)
+
+
+Started GET "/date_of_infections/1" for ::1 at 2019-10-27 13:23:57 -0500
+Processing by DateOfInfectionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDateOfInfection Load (0.9ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections" WHERE "date_of_infections"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/date_of_infections_controller.rb:67:in `set_date_of_infection'
+  Rendering date_of_infections/show.html.erb within layouts/application
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/date_of_infections/show.html.erb:10
+  Rendered date_of_infections/show.html.erb within layouts/application (Duration: 120.7ms | Allocations: 8635)
+Completed 200 OK in 314ms (Views: 298.9ms | ActiveRecord: 1.5ms | Allocations: 28716)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:23:59 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.4ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 38.9ms | Allocations: 840)
+Completed 200 OK in 190ms (Views: 187.2ms | ActiveRecord: 0.4ms | Allocations: 35703)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:24:31 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.5ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 21.9ms | Allocations: 1864)
+Completed 200 OK in 209ms (Views: 199.3ms | ActiveRecord: 0.5ms | Allocations: 23878)
+
+
+Started GET "/date_of_infections/1" for ::1 at 2019-10-27 13:24:47 -0500
+Processing by DateOfInfectionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDateOfInfection Load (0.4ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections" WHERE "date_of_infections"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/date_of_infections_controller.rb:67:in `set_date_of_infection'
+  Rendering date_of_infections/show.html.erb within layouts/application
+  Rendered date_of_infections/show.html.erb within layouts/application (Duration: 55.9ms | Allocations: 3458)
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.4ms | Allocations: 5293)
+
+
+  
+ActionView::Template::Error (undefined method `datetime' for #<DateOfInfection:0x000000000d36f968>
+Did you mean?  date=):
+    2: 
+    3: <p>
+    4:   <strong>Date:</strong>
+    5:   <%= @date_of_infection.datetime %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/date_of_infections/show.html.erb:5
+Started GET "/date_of_infections/1" for ::1 at 2019-10-27 13:24:56 -0500
+Processing by DateOfInfectionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDateOfInfection Load (0.7ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections" WHERE "date_of_infections"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/date_of_infections_controller.rb:67:in `set_date_of_infection'
+  Rendering date_of_infections/show.html.erb within layouts/application
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/date_of_infections/show.html.erb:10
+  Rendered date_of_infections/show.html.erb within layouts/application (Duration: 24.8ms | Allocations: 1295)
+Completed 200 OK in 276ms (Views: 254.7ms | ActiveRecord: 1.2ms | Allocations: 15541)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:24:59 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.4ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1035)
+Completed 200 OK in 175ms (Views: 166.6ms | ActiveRecord: 0.4ms | Allocations: 26138)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:25:56 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.7ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/date_of_infections/index.html.erb:18
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 223.2ms | Allocations: 8398)
+Completed 200 OK in 491ms (Views: 482.4ms | ActiveRecord: 1.3ms | Allocations: 27751)
+
+
+Started GET "/date_of_infections/1" for ::1 at 2019-10-27 13:25:59 -0500
+Processing by DateOfInfectionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDateOfInfection Load (0.5ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections" WHERE "date_of_infections"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/date_of_infections_controller.rb:67:in `set_date_of_infection'
+  Rendering date_of_infections/show.html.erb within layouts/application
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/date_of_infections/show.html.erb:10
+  Rendered date_of_infections/show.html.erb within layouts/application (Duration: 56.3ms | Allocations: 1498)
+Completed 200 OK in 232ms (Views: 222.9ms | ActiveRecord: 1.0ms | Allocations: 23136)
+
+
+Started GET "/owners" for ::1 at 2019-10-27 13:26:00 -0500
+Processing by OwnersController#index as HTML
+  Rendering owners/index.html.erb within layouts/application
+  [1m[36mOwner Load (1.1ms)[0m  [1m[34mSELECT "owners".* FROM "owners"[0m
+  ↳ app/views/owners/index.html.erb:15
+  Rendered owners/index.html.erb within layouts/application (Duration: 50.0ms | Allocations: 1026)
+Completed 200 OK in 196ms (Views: 189.9ms | ActiveRecord: 1.1ms | Allocations: 14514)
+
+
+Started GET "/owners/1" for ::1 at 2019-10-27 13:26:02 -0500
+Processing by OwnersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOwner Load (0.5ms)[0m  [1m[34mSELECT "owners".* FROM "owners" WHERE "owners"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/owners_controller.rb:67:in `set_owner'
+  Rendering owners/show.html.erb within layouts/application
+  Rendered owners/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1072)
+Completed 200 OK in 252ms (Views: 199.1ms | ActiveRecord: 0.5ms | Allocations: 33300)
+
+
+Started GET "/owners" for ::1 at 2019-10-27 13:26:04 -0500
+Processing by OwnersController#index as HTML
+  Rendering owners/index.html.erb within layouts/application
+  [1m[36mOwner Load (1.4ms)[0m  [1m[34mSELECT "owners".* FROM "owners"[0m
+  ↳ app/views/owners/index.html.erb:15
+  Rendered owners/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 755)
+Completed 200 OK in 140ms (Views: 137.0ms | ActiveRecord: 1.4ms | Allocations: 13355)
+
+
+Started GET "/animals" for ::1 at 2019-10-27 13:26:05 -0500
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:16
+  [1m[36mOwner Load (1.1ms)[0m  [1m[34mSELECT "owners".* FROM "owners" WHERE "owners"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:20
+  Rendered animals/index.html.erb within layouts/application (Duration: 105.2ms | Allocations: 1740)
+Completed 200 OK in 232ms (Views: 224.9ms | ActiveRecord: 1.6ms | Allocations: 14921)
+
+
+Started GET "/animals/1" for ::1 at 2019-10-27 13:26:06 -0500
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:67:in `set_animal'
+  Rendering animals/show.html.erb within layouts/application
+  [1m[36mOwner Load (0.5ms)[0m  [1m[34mSELECT "owners".* FROM "owners" WHERE "owners"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/show.html.erb:15
+  Rendered animals/show.html.erb within layouts/application (Duration: 70.8ms | Allocations: 1388)
+Completed 200 OK in 387ms (Views: 375.0ms | ActiveRecord: 1.1ms | Allocations: 24617)
+
+
+Started GET "/animals" for ::1 at 2019-10-27 13:26:08 -0500
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (1.9ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:16
+  [1m[36mOwner Load (1.1ms)[0m  [1m[34mSELECT "owners".* FROM "owners" WHERE "owners"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:20
+  Rendered animals/index.html.erb within layouts/application (Duration: 283.4ms | Allocations: 2827)
+Completed 200 OK in 494ms (Views: 485.6ms | ActiveRecord: 3.0ms | Allocations: 36069)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:26:08 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.7ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  [1m[36mAnimal Load (0.7ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/date_of_infections/index.html.erb:18
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 96.4ms | Allocations: 1460)
+Completed 200 OK in 229ms (Views: 226.3ms | ActiveRecord: 1.4ms | Allocations: 14460)
+
+
+Started GET "/date_of_infections/1" for ::1 at 2019-10-27 13:26:10 -0500
+Processing by DateOfInfectionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDateOfInfection Load (0.6ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections" WHERE "date_of_infections"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/date_of_infections_controller.rb:67:in `set_date_of_infection'
+  Rendering date_of_infections/show.html.erb within layouts/application
+  [1m[36mAnimal Load (0.8ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/date_of_infections/show.html.erb:10
+  Rendered date_of_infections/show.html.erb within layouts/application (Duration: 48.4ms | Allocations: 790)
+Completed 200 OK in 199ms (Views: 148.6ms | ActiveRecord: 1.4ms | Allocations: 13900)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:26:11 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.7ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  [1m[36mAnimal Load (0.8ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/date_of_infections/index.html.erb:18
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 122.2ms | Allocations: 1451)
+Completed 200 OK in 272ms (Views: 264.3ms | ActiveRecord: 1.5ms | Allocations: 14048)
+
+
+Started GET "/diseases" for ::1 at 2019-10-27 13:26:12 -0500
+Processing by DiseasesController#index as HTML
+  Rendering diseases/index.html.erb within layouts/application
+  [1m[36mDisease Load (0.7ms)[0m  [1m[34mSELECT "diseases".* FROM "diseases"[0m
+  ↳ app/views/diseases/index.html.erb:15
+  Rendered diseases/index.html.erb within layouts/application (Duration: 101.7ms | Allocations: 2170)
+Completed 200 OK in 258ms (Views: 253.3ms | ActiveRecord: 0.7ms | Allocations: 26443)
+
+
+Started GET "/diseases/new" for ::1 at 2019-10-27 13:26:13 -0500
+Processing by DiseasesController#new as HTML
+  Rendering diseases/new.html.erb within layouts/application
+  Rendered diseases/_form.html.erb (Duration: 59.6ms | Allocations: 1652)
+  Rendered diseases/new.html.erb within layouts/application (Duration: 97.5ms | Allocations: 2098)
+Completed 200 OK in 221ms (Views: 209.0ms | ActiveRecord: 1.4ms | Allocations: 27915)
+
+
+Started GET "/diseases/new" for ::1 at 2019-10-27 13:27:05 -0500
+Processing by DiseasesController#new as HTML
+  Rendering diseases/new.html.erb within layouts/application
+  Rendered diseases/_form.html.erb (Duration: 104.4ms | Allocations: 2298)
+  Rendered diseases/new.html.erb within layouts/application (Duration: 125.5ms | Allocations: 2649)
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 0.0ms | Allocations: 3987)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x000000000dd0f310>::Date_of_infection):
+    18: 
+    19:   <div class="field">
+    20:     <%= form.label :date_of_infection_id %>
+    21:     <%= form.collection_select :date_of_infection_id, Date_of_infection.all,:id,:date %>
+    22:   </div>
+    23: 
+    24:   <div class="actions">
+  
+app/views/diseases/_form.html.erb:21
+app/views/diseases/_form.html.erb:1
+app/views/diseases/new.html.erb:3
+Started GET "/diseases/new" for ::1 at 2019-10-27 13:27:20 -0500
+Processing by DiseasesController#new as HTML
+  Rendering diseases/new.html.erb within layouts/application
+  Rendered diseases/_form.html.erb (Duration: 47.1ms | Allocations: 2294)
+  Rendered diseases/new.html.erb within layouts/application (Duration: 54.2ms | Allocations: 2645)
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.0ms | Allocations: 3983)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x000000000ccf0a88>::DateOffInfection):
+    18: 
+    19:   <div class="field">
+    20:     <%= form.label :date_of_infection_id %>
+    21:     <%= form.collection_select :date_of_infection_id, DateOffInfection.all,:id,:date %>
+    22:   </div>
+    23: 
+    24:   <div class="actions">
+  
+app/views/diseases/_form.html.erb:21
+app/views/diseases/_form.html.erb:1
+app/views/diseases/new.html.erb:3
+Started GET "/diseases/new" for ::1 at 2019-10-27 13:28:01 -0500
+Processing by DiseasesController#new as HTML
+  Rendering diseases/new.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.3ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/diseases/_form.html.erb:21
+  Rendered diseases/_form.html.erb (Duration: 53.1ms | Allocations: 9129)
+  Rendered diseases/new.html.erb within layouts/application (Duration: 61.5ms | Allocations: 10301)
+Completed 200 OK in 199ms (Views: 191.7ms | ActiveRecord: 0.3ms | Allocations: 25039)
+
+
+Started POST "/diseases" for ::1 at 2019-10-27 13:28:08 -0500
+Processing by DiseasesController#create as HTML
+  Parameters: {"authenticity_token"=>"fLx8tJbNDctZi3ksxJGMkFQJFqUCpgXHOyG9UJsAtFFW7eDa3/FnYAbpWdSnaSkvrH9s4e0Zu/lISEvaUGSjsw==", "disease"=>{"name"=>"Flu", "date_of_infection_id"=>"1"}, "commit"=>"Create Disease"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/diseases_controller.rb:30:in `block in create'
+  [1m[36mDateOfInfection Load (0.3ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections" WHERE "date_of_infections"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/diseases_controller.rb:30:in `block in create'
+  [1m[36mDisease Create (3.5ms)[0m  [1m[32mINSERT INTO "diseases" ("name", "date_of_infection_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Flu"], ["date_of_infection_id", 1], ["created_at", "2019-10-27 18:28:08.228152"], ["updated_at", "2019-10-27 18:28:08.228152"]]
+  ↳ app/controllers/diseases_controller.rb:30:in `block in create'
+  [1m[35m (26.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/diseases_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/diseases/1
+Completed 302 Found in 358ms (ActiveRecord: 29.9ms | Allocations: 4875)
+
+
+Started GET "/diseases/1" for ::1 at 2019-10-27 13:28:08 -0500
+Processing by DiseasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDisease Load (1.7ms)[0m  [1m[34mSELECT "diseases".* FROM "diseases" WHERE "diseases"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/diseases_controller.rb:67:in `set_disease'
+  Rendering diseases/show.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.5ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections" WHERE "date_of_infections"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/diseases/show.html.erb:10
+  Rendered diseases/show.html.erb within layouts/application (Duration: 183.8ms | Allocations: 13006)
+Completed 500 Internal Server Error in 317ms (ActiveRecord: 2.2ms | Allocations: 15845)
+
+
+  
+ActionView::Template::Error (undefined method `datetime' for #<DateOfInfection:0x000000000ebb7048>
+Did you mean?  date=):
+     7: 
+     8: <p>
+     9:   <strong>Date of infection:</strong>
+    10:   <%= @disease.date_of_infection.datetime %>
+    11: </p>
+    12: 
+    13: <%= link_to 'Edit', edit_disease_path(@disease) %> |
+  
+app/views/diseases/show.html.erb:10
+Started GET "/diseases/1" for ::1 at 2019-10-27 13:28:30 -0500
+Processing by DiseasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDisease Load (0.8ms)[0m  [1m[34mSELECT "diseases".* FROM "diseases" WHERE "diseases"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/diseases_controller.rb:67:in `set_disease'
+  Rendering diseases/show.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.5ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections" WHERE "date_of_infections"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/diseases/show.html.erb:10
+  Rendered diseases/show.html.erb within layouts/application (Duration: 56.4ms | Allocations: 985)
+Completed 200 OK in 450ms (Views: 366.2ms | ActiveRecord: 1.3ms | Allocations: 25536)
+
+
+Started GET "/diseases" for ::1 at 2019-10-27 13:28:33 -0500
+Processing by DiseasesController#index as HTML
+  Rendering diseases/index.html.erb within layouts/application
+  [1m[36mDisease Load (0.8ms)[0m  [1m[34mSELECT "diseases".* FROM "diseases"[0m
+  ↳ app/views/diseases/index.html.erb:15
+  [1m[36mDateOfInfection Load (1.5ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections" WHERE "date_of_infections"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/diseases/index.html.erb:18
+  Rendered diseases/index.html.erb within layouts/application (Duration: 96.8ms | Allocations: 2921)
+Completed 200 OK in 259ms (Views: 252.3ms | ActiveRecord: 2.3ms | Allocations: 36731)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:28:38 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.7ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/date_of_infections/index.html.erb:18
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 82.7ms | Allocations: 3278)
+Completed 200 OK in 202ms (Views: 197.2ms | ActiveRecord: 1.3ms | Allocations: 17574)
+
+
+Started GET "/diseases" for ::1 at 2019-10-27 13:28:41 -0500
+Processing by DiseasesController#index as HTML
+  Rendering diseases/index.html.erb within layouts/application
+  [1m[36mDisease Load (0.3ms)[0m  [1m[34mSELECT "diseases".* FROM "diseases"[0m
+  ↳ app/views/diseases/index.html.erb:15
+  [1m[36mDateOfInfection Load (0.6ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections" WHERE "date_of_infections"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/diseases/index.html.erb:18
+  Rendered diseases/index.html.erb within layouts/application (Duration: 96.6ms | Allocations: 3531)
+Completed 200 OK in 200ms (Views: 197.7ms | ActiveRecord: 0.8ms | Allocations: 18124)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:28:42 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.3ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/date_of_infections/index.html.erb:18
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 57.9ms | Allocations: 2224)
+Completed 200 OK in 206ms (Views: 202.3ms | ActiveRecord: 0.7ms | Allocations: 20009)
+
+
+Started GET "/animals" for ::1 at 2019-10-27 13:28:43 -0500
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:16
+  [1m[36mOwner Load (0.4ms)[0m  [1m[34mSELECT "owners".* FROM "owners" WHERE "owners"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:20
+  Rendered animals/index.html.erb within layouts/application (Duration: 118.0ms | Allocations: 4361)
+Completed 200 OK in 281ms (Views: 276.1ms | ActiveRecord: 0.9ms | Allocations: 30639)
+
+
+Started GET "/diseases" for ::1 at 2019-10-27 13:29:54 -0500
+Processing by DiseasesController#index as HTML
+  Rendering diseases/index.html.erb within layouts/application
+  [1m[36mDisease Load (0.4ms)[0m  [1m[34mSELECT "diseases".* FROM "diseases"[0m
+  ↳ app/views/diseases/index.html.erb:15
+  [1m[36mDateOfInfection Load (0.4ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections" WHERE "date_of_infections"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/diseases/index.html.erb:18
+  Rendered diseases/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1458)
+Completed 200 OK in 182ms (Views: 177.5ms | ActiveRecord: 0.8ms | Allocations: 14061)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:29:55 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.4ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  [1m[36mAnimal Load (1.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/date_of_infections/index.html.erb:18
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 226.9ms | Allocations: 3069)
+Completed 200 OK in 406ms (Views: 401.0ms | ActiveRecord: 1.9ms | Allocations: 26060)
+
+
+Started GET "/diseases" for ::1 at 2019-10-27 13:29:56 -0500
+Processing by DiseasesController#index as HTML
+  Rendering diseases/index.html.erb within layouts/application
+  [1m[36mDisease Load (0.9ms)[0m  [1m[34mSELECT "diseases".* FROM "diseases"[0m
+  ↳ app/views/diseases/index.html.erb:15
+  [1m[36mDateOfInfection Load (0.8ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections" WHERE "date_of_infections"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/diseases/index.html.erb:18
+  Rendered diseases/index.html.erb within layouts/application (Duration: 96.5ms | Allocations: 1449)
+Completed 200 OK in 215ms (Views: 211.4ms | ActiveRecord: 1.7ms | Allocations: 14047)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:29:57 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (0.4ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/date_of_infections/index.html.erb:18
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 117.2ms | Allocations: 2038)
+Completed 200 OK in 289ms (Views: 285.0ms | ActiveRecord: 0.9ms | Allocations: 26327)
+
+
+Started GET "/diseases" for ::1 at 2019-10-27 13:29:58 -0500
+Processing by DiseasesController#index as HTML
+  Rendering diseases/index.html.erb within layouts/application
+  [1m[36mDisease Load (0.4ms)[0m  [1m[34mSELECT "diseases".* FROM "diseases"[0m
+  ↳ app/views/diseases/index.html.erb:15
+  [1m[36mDateOfInfection Load (0.4ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections" WHERE "date_of_infections"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/diseases/index.html.erb:18
+  Rendered diseases/index.html.erb within layouts/application (Duration: 33.7ms | Allocations: 2018)
+Completed 200 OK in 147ms (Views: 143.5ms | ActiveRecord: 0.9ms | Allocations: 24877)
+
+
+Started GET "/date_of_infections" for ::1 at 2019-10-27 13:29:59 -0500
+Processing by DateOfInfectionsController#index as HTML
+  Rendering date_of_infections/index.html.erb within layouts/application
+  [1m[36mDateOfInfection Load (1.2ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections"[0m
+  ↳ app/views/date_of_infections/index.html.erb:15
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/date_of_infections/index.html.erb:18
+  Rendered date_of_infections/index.html.erb within layouts/application (Duration: 29.3ms | Allocations: 1451)
+Completed 200 OK in 113ms (Views: 109.5ms | ActiveRecord: 1.6ms | Allocations: 20444)
+
+
+Started GET "/diseases" for ::1 at 2019-10-27 13:30:01 -0500
+Processing by DiseasesController#index as HTML
+  Rendering diseases/index.html.erb within layouts/application
+  [1m[36mDisease Load (0.5ms)[0m  [1m[34mSELECT "diseases".* FROM "diseases"[0m
+  ↳ app/views/diseases/index.html.erb:15
+  [1m[36mDateOfInfection Load (0.6ms)[0m  [1m[34mSELECT "date_of_infections".* FROM "date_of_infections" WHERE "date_of_infections"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/diseases/index.html.erb:18
+  Rendered diseases/index.html.erb within layouts/application (Duration: 36.1ms | Allocations: 2293)
+Completed 200 OK in 160ms (Views: 155.7ms | ActiveRecord: 1.1ms | Allocations: 21386)
+>>>>>>> origin/wajeeh
+=======
+  Rendered animals/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1376)
+Started GET "/animals" for ::1 at 2019-10-29 22:37:15 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.1ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:16
+  Rendered animals/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 734)
+Completed 200 OK in 1463ms (Views: 1456.8ms | ActiveRecord: 0.9ms | Allocations: 2179515)
+
+
+Completed 200 OK in 1292ms (Views: 1291.5ms | ActiveRecord: 0.1ms | Allocations: 1878823)
+>>>>>>> origin/Syed
 
 

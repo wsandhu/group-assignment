@@ -17,7 +17,7 @@
       <tr>
         <td><%= animal.species %></td>
         <td><%= animal.name %></td>
-        <td><%= animal.owner_id %></td>
+        <td><%= animal.owner.first_name %></td>
         <td><%= link_to 'Show', animal %></td>
         <td><%= link_to 'Edit', edit_animal_path(animal) %></td>
         <td><%= link_to 'Destroy', animal, method: :delete, data: { confirm: 'Are you sure?' } %></td>

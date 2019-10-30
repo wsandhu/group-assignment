@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= form.label :date_of_infection_id %>
-    <%= form.text_field :date_of_infection_id %>
+    <%= form.collection_select :date_of_infection_id, DateOfInfection.all,:id,:date %>
   </div>
 
   <div class="actions">
