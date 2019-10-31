@@ -10,31 +10,15 @@
   </head>
 
   <body>
-
-    <div class='content'>
-      <%= yield %>
-    <div>
-
-
-<div class='header'>
-      <h1>Disease Tracker</h1>
+    <div class='header'>
+    <h1>Disease Tracker</h1>
       <%= link_to "Animals", animals_path %>
       <%= link_to "Diseases", diseases_path %>
       <%= link_to "Owners", owners_path %>
-  </div>
-___________
-    <%= yield %>
-=
-  </body>
-
-      <div class="heading">
-    <h1>Appointment Manager</h1>
-    <%= link_to("Owners", owners_path) %>
-    <%= link_to("Animals", animals_path) %>
-    <%= link_to("Date of infection", date_of_infections_path) %>
-    <%= link_to("Diseases", diseases_path) %>
-      </div>
-<%= yield %>
+      <%= link_to "Date Of Infection", date_of_infections_path %>
+    </div>
+      <div class='content'>
+        <%= yield %>
+    <div>
 </body>
->>>>>>> origin/wajeeh
 </html>
